@@ -1,3 +1,5 @@
 ## 目录
 
-#### [mysql/mysql8-intro.md](./posts/mysql/mysql8-intro.md)
+
+* MySQL
+	- [mysql 8 简介](./posts/mysql/mysql8-intro.md)
