@@ -1,3 +1,4 @@
+### 2.3 安装扩展工具
 VMWare 14.1.2 安装 macOS High Sierra 10.13.6 虚拟机
 ===============================
 
@@ -56,27 +57,27 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 
 打开 VMWare 软件，点击 `创建新的虚拟机`，然后选择 `典型(推荐)(T)`，再点击 `下一步` 得到如下界面
 
-![01-new-vm.png](https://drive.google.com/uc?authuser=0&id=1BcQ7rmmwQawsE0NRitjrtbY4AY97mnAQ&export=download)
+![01-new-vm.png](./vmware-macos/01-new-vm.PNG)
 
 #### 2.2.2 选择 ISO 镜像
 
 执行这一步之前必须已经下载完 macOS 系统镜像。如果已经下载完成，则选择 `安装程序光盘映像文件`，然后点击 `浏览`，选择你的镜像文件。
 
-![02-select-image-file.png](https://drive.google.com/uc?authuser=0&id=1BcQ7rmmwQawsE0NRitjrtbY4AY97mnAQ&export=download)
+![02-select-image-file.png](./vmware-macos/02-select-image-file.PNG)
 
-![03-open-image-file.png](https://drive.google.com/uc?authuser=0&id=1BFyzzvtUos2b0km6yRbZSr8-3xuBMhxq&export=download)
+![03-open-image-file.png](./vmware-macos/03-open-image-file.PNG)
 
 #### 2.2.3 选择系统类型
 
-![04-select-os-type.png](https://drive.google.com/uc?authuser=0&id=1o49hKcF-ggsA5PsKHnuKMa0Q6MwzbhFm&export=download)
+![04-select-os-type.png](./vmware-macos/04-select-os-type.PNG)
 
 #### 2.2.4 设定虚拟机名称和虚拟机存放位置
 
-![05-set-name-and-filapath.png](https://drive.google.com/uc?authuser=0&id=1QwtfarzcOljUGwXsEc5ddX7shA67-i9j&export=download)
+![05-set-name-and-filapath.png](./vmware-macos/05-set-name-and-filepath.PNG)
 
 #### 2.2.5 设定磁盘容量和划分方式
 
-![06-set-disk-capacity.png](https://drive.google.com/open?id=1sl2Fgm6bWFkiwNHmk1StYprRfA6_Cv2B)
+![06-set-disk-capacity.png](./vmware-macos/06-set-disk-capacity.PNG)
 
 #### 2.2.6 修改虚拟机配置文件
 
@@ -86,45 +87,45 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 smc.version = 0
 ```
 
-![07-change-vmx-file](https://drive.google.com/open?id=1ecRFX_bJoHeCM5QYKUmhBUpqmTiByqLc)
+![07-change-vmx-file](./vmware-macos/07-change-vmx-file.PNG)
 
 然后就可以去启动虚拟机了，启动需要一定时间，应当可以看到如下图的进度图
 
-![08-installing.png](https://drive.google.com/uc?authuser=0&id=1KlFLc8cmB_K2UKVW4st27EJnFjHqzqMP&export=download)
+![08-installing.png](./vmware-macos/08-installing.PNG)
 
 #### 2.2.7 安装系统
 
 首先需要选择系统语言再进入`下一步`
 
-![09-select-language.png](https://drive.google.com/uc?authuser=0&id=1HeVcdqDN3QF-n68SLecBSWYSXrKDLHfE&export=download)
+![09-select-language.png](./vmware-macos/09-select-language.PNG)
 
 然后再选择`磁盘工具`后`继续`
 
-![10-select-disk-tool.png](https://drive.google.com/uc?authuser=0&id=1LzKlJzvQ6vgq6cwKrencZclDr_34BjYA&export=download)
+![10-select-disk-tool.png](./vmware-macos/10-select-disk-tool.PNG)
 
 进入磁盘工具后，在左侧选中 `VMWare Virtual SATA...`，然后顶部的 `抹掉` 按钮，然后在弹出框中给磁盘取名，下图所示取得名字为 `os`，区域两个选项保持默认即可，最后点击`抹掉`。抹掉成功后关掉磁盘工具窗口
 
-![11-init-disk.png](https://drive.google.com/uc?authuser=0&id=1hulBaB9ulrp2eQlvRx3BYXCWXsijrEF2&export=download)
+![11-init-disk.png](./vmware-macos/11-init-disk.PNG)
 
 然后选择`安装 macOS`再`继续`
 
-![12-select-install.png](https://drive.google.com/uc?authuser=0&id=1ieildTp2NFd555gnk8wHHM9CSXSZ0H6J&export=download)
+![12-select-install.png](./vmware-macos/12-select-install.PNG)
 
 接下来选择安装位置，就选择刚才抹掉的磁盘，选好之后点击`安装`
 
-![14-select-os-disk](https://drive.google.com/uc?authuser=0&id=1ZvPV49IpLMCfGhA1vSG4BCsozTlz2lrt&export=download)
+![14-select-os-disk](./vmware-macos/14-select-os-disk.PNG)
 
 然后是安装过程，需要等待一段时间
 
-![15-installing.png](https://drive.google.com/uc?authuser=0&id=1q05B0QoPezV6W84Gnequ0qUj-e7eSHwE&export=download)
+![15-installing.png](./vmware-macos/15-installing.PNG)
 
 之后虚拟机系统重启安装，也需要等待一段时间
 
-![16-restarting](https://drive.google.com/uc?authuser=0&id=1V8ekvcHCqzCU35M21hhlGP6ZycwYe1b7&export=download)
+![16-restarting](./vmware-macos/16-restarting.PNG)
 
 #### 2.2.8 系统设置
 
 主要就是一些选择地区，设置账号密码等等，这些就自行设置了。
 
-![17-select-contry](https://drive.google.com/uc?authuser=0&id=1SPaFawY5PFIhxQxXWxMPYGSyLsw1JCvv&export=download)
+![17-select-contry](./vmware-macos/17-select-country.PNG)
 
