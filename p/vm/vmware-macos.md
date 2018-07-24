@@ -47,11 +47,19 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 
 ### 2.1 下载ISO镜像
 
-google 硬盘[下载地址](https://drive.google.com/open?id=1q8cWD1rJoKTExsehx3-wnwEq7SNCMeY7)
-百度网盘[下载地址](TODO)
+* google 硬盘[下载地址](https://drive.google.com/open?id=1q8cWD1rJoKTExsehx3-wnwEq7SNCMeY7)
+* 百度网盘[下载地址](TODO)
 
 ### 2.2 安装 macOS
 
 #### 2.2.1 新建虚拟机
 
+打开 VMWare 软件，点击 `创建新的虚拟机`，然后选择 `典型(推荐)(T)`，再点击 `下一步` 得到如下界面
+
 ![01-new-vm.png](https://doc-0c-bs-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/kuib2agv08u6hujbnqttpbka8ran5234/1532426400000/14861864943404317605/*/18Kv9WtBrQTvt4xKrVZvso9JnQJFjZ6AS?e=download)
+
+#### 2.2.2 选择 ISO 镜像
+
+执行这一步之前必须已经下载完 macOS 系统镜像。如果已经下载完成，则选择 `安装程序光盘映像文件`，然后点击 `浏览`，选择你的镜像文件。
+
+![02-select-image-file](https://drive.google.com/uc?authuser=0&id=1BcQ7rmmwQawsE0NRitjrtbY4AY97mnAQ&export=download)
