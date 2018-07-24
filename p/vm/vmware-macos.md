@@ -27,7 +27,7 @@ sha256sum: 8932c681a8954c4aaf0e7d0039c6d8dff9ade323170d9a9a78553c98ffe16963
 #### 1.3.1 下载 unlocker
 
 * google 硬盘[下载地址](https://drive.google.com/open?id=1C3glzUEv0NCYb9uo0FZL_XvukGYs5yC8)
-* 百度网盘[下载地址](TODO)
+* 百度网盘[下载地址](https://pan.baidu.com/s/17drFWnDZwUTT5gflHS5ODg)
 
 ```
 md5sum: 01b10966b0a466a80dcb137d181aa4ba
@@ -48,7 +48,7 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 ### 2.1 下载ISO镜像
 
 * google 硬盘[下载地址](https://drive.google.com/open?id=1q8cWD1rJoKTExsehx3-wnwEq7SNCMeY7)
-* 百度网盘[下载地址](TODO)
+* 百度网盘[下载地址](https://pan.baidu.com/s/1_vRuHpvuoMLfv63qC0z0JQ)
 
 ### 2.2 安装 macOS
 
