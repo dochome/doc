@@ -8,4 +8,4 @@
 	- [MySQL 主从备份](./p/mysql/replication.md)
 
 * **VM**
-	- [VMWare install macOS High Sierra 10.13.6](./p/vm/vmware-macos.md)
+	- [VMWare 14.1.2 安装 macOS High Sierra 10.13.6 虚拟机](./p/vm/vmware-macos.md)
