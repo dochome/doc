@@ -54,4 +54,4 @@ google 硬盘[下载地址](https://drive.google.com/open?id=1q8cWD1rJoKTExsehx3
 
 #### 2.2.1 新建虚拟机
 
-![01-new-vm.png](https://drive.google.com/open?id=18Kv9WtBrQTvt4xKrVZvso9JnQJFjZ6AS)
+![01-new-vm.png](https://doc-0c-bs-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/kuib2agv08u6hujbnqttpbka8ran5234/1532426400000/14861864943404317605/*/18Kv9WtBrQTvt4xKrVZvso9JnQJFjZ6AS?e=download)
