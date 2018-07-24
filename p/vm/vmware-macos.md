@@ -50,6 +50,11 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 * google 硬盘[下载地址](https://drive.google.com/open?id=1q8cWD1rJoKTExsehx3-wnwEq7SNCMeY7)
 * 百度网盘[下载地址](https://pan.baidu.com/s/1_vRuHpvuoMLfv63qC0z0JQ)
 
+```
+md5sum: af8d962f691cc615d28e1f2498aaf882
+sha256sum: d4a1d635bedf9b806770e8c876818d5966546a1d6bd7dcb63d75a062df0bfdbc
+```
+
 ### 2.2 安装 macOS
 
 #### 2.2.1 新建虚拟机
