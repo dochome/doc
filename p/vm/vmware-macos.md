@@ -1,6 +1,5 @@
-### 2.3 安装扩展工具
 VMWare 14.1.2 安装 macOS High Sierra 10.13.6 虚拟机
-===============================
+===================================================
 
 ## 1 下载并安装 vmware 14.1.2
 
@@ -113,7 +112,7 @@ smc.version = 0
 
 接下来选择安装位置，就选择刚才抹掉的磁盘，选好之后点击`安装`
 
-![14-select-os-disk](./vmware-macos/14-select-os-disk.PNG)
+![14-select-os-disk.png](./vmware-macos/14-select-os-disk.PNG)
 
 然后是安装过程，需要等待一段时间
 
@@ -121,11 +120,34 @@ smc.version = 0
 
 之后虚拟机系统重启安装，也需要等待一段时间
 
-![16-restarting](./vmware-macos/16-restarting.PNG)
+![16-restarting.png](./vmware-macos/16-restarting.PNG)
 
 #### 2.2.8 系统设置
 
 主要就是一些选择地区，设置账号密码等等，这些就自行设置了。
 
-![17-select-contry](./vmware-macos/17-select-country.PNG)
+![17-select-contry.png](./vmware-macos/17-select-country.PNG)
 
+### 2.3 安装扩展工具(VMWare Tools)
+
+首先关闭虚拟机，然后`编辑虚拟机设置`
+
+![18-set-vm.png](./vmware-macos/18-set-vm.PNG)
+
+在 `硬件 -> CD/DVD(SATA) -> 连接` 中选择 `使用ISO镜像文件`，再点击旁边的 `浏览` 按钮选择 ISO 文件，这个 ISO 文件为 `C:\Program Files(x86)\VMWare\VMWare Workstation\darwin.iso`。选好之后`确定`，然后启动虚拟机。
+
+![19-select-darwin-iso.png](./vmware-macos/19-select-darwin-iso.PNG)
+
+启动后，双击虚拟内的桌面上的 `VMWare Tools`，在弹出框中再双击 `安装 VMWare Tools`，然后按指示一步步完成安装。
+
+![20-install-vmware-tools.png](./vmware-macos/20-install-vmware-tools.PNG)
+
+安装完成后关闭虚拟机，在重新设置虚拟的的 `CD/DVD -> 连接` 选项，这回设成 `使用物理驱动器`
+
+![21-select-physical-driver.png](./vmware-macos/21-select-physical-driver.PNG)
+
+
+---
+
+
+**至此，安装工作全部结束了!**
