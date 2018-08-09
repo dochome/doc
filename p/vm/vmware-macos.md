@@ -1,7 +1,9 @@
-VMWare 14.1.2 安装 macOS High Sierra 10.13.6 虚拟机
-===================================================
+VMWare 安装 macOS High Sierra 10.13.6 虚拟机
+=============================================
 
-## 1 下载并安装 vmware 14.1.2
+## 1 下载并安装 VMWare Workstation 14.1.2 或 VMWare Fusion 10.1.2
+
+VMWare Workstation 适用于 Windows 和 Linux 系统，而 VMWare Fusion 使用于 macOS。
 
 ### 1.1 下载
 
@@ -18,6 +20,16 @@ sha256sum: 33caa5ddac80f75dfd17215eeafab46856dfa7f45219260f7663f4a583cfd0c0
 md5sum: f077c30d037b85e30eb8187d970498bc
 sha256sum: 8932c681a8954c4aaf0e7d0039c6d8dff9ade323170d9a9a78553c98ffe16963
 ```
+
+* macOS 版本[下载地址](https://download3.vmware.com/software/fusion/file/VMware-Fusion-10.1.2-8502123.dmg)
+
+```
+md5sum: 9e89b267bf4d98bdcd08ff741041702f
+sha256sum: b3310fc8ee64bae6e994e0e2720282b037857cc22ffd8427a713f0c84ac4e556
+```
+
+**本文不讲述在 macOS 下安装 macOS 虚拟机的过程。**
+
 ### 1.2 安装
 
 安装过程很简单，只是到安装最后需要有许可密钥（[网上有现成的可用](https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=baidu&wd=vmware%2014%20%E5%AF%86%E9%92%A5&oq=vmware%252014&rsv_pq=84d563ad0000fbdf&rsv_t=18dcXH7Ve4XYyqVZFsdWJa2NTt7AXXl85LnnfUgzgdra7KGO%2FrQu2clxf%2F8&rqlang=cn&rsv_enter=1&rsv_sug3=2&rsv_sug1=2&rsv_sug7=100&rsv_sug2=1&prefixsug=vmware%252014%2520&rsp=0&inputT=844&rsv_sug4=1296&rsv_sug=1)）
@@ -36,7 +48,10 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 
 #### 1.3.2 安装 unlocker
 
-下载 `unlocker.zip` 后解压然后以管理员身份执行 `win-install.bat`。
+下载 `unlocker.zip` 后解压，然后
+
+* 如果是 windows 系统，则以管理员身份执行 `win-install.cmd`。
+* 如果是 linux 系统，则执行 `sudo ./lnx-install.sh`。
 
 
 ---
@@ -73,6 +88,8 @@ sha256sum: d4a1d635bedf9b806770e8c876818d5966546a1d6bd7dcb63d75a062df0bfdbc
 
 #### 2.2.3 选择系统类型
 
+如果在这一步没有找到 `Apple Mac OS X(M)` 选项则说明 `unlocker` 没有正确安装。
+
 ![04-select-os-type.png](./vmware-macos/04-select-os-type.PNG)
 
 #### 2.2.4 设定虚拟机名称和虚拟机存放位置
@@ -85,7 +102,7 @@ sha256sum: d4a1d635bedf9b806770e8c876818d5966546a1d6bd7dcb63d75a062df0bfdbc
 
 #### 2.2.6 修改虚拟机配置文件
 
-在前面设定的虚拟机存储目录中找到后缀为 `vmx` 的文件，如果是按前面途中所示给虚拟机取名为 `macOS`，那么这个文件就是 `macOS.vmx`。修改这个文件，如下图所示，使用记事本或其他任何文本编辑器打开文件（不要双击该文件，双击会默认使用 VMWare 打开虚拟机），然后在 `smc.present = "TRUE"` 这一行下面添加一行
+在前面设定的虚拟机存储目录中找到后缀为 `vmx` 的文件，如果是按前面图中所示给虚拟机取名为 `macOS`，那么这个文件就是 `macOS.vmx`。修改这个文件，如下图所示，使用记事本或其他任何文本编辑器打开文件（不要双击该文件，双击会默认使用 VMWare 打开虚拟机），然后在 `smc.present = "TRUE"` 这一行下面添加一行
 
 ```
 smc.version = 0
@@ -143,11 +160,11 @@ smc.version = 0
 
 ![19-select-darwin-iso.png](./vmware-macos/19-select-darwin-iso.PNG)
 
-启动后，双击虚拟内的桌面上的 `VMWare Tools`，在弹出框中再双击 `安装 VMWare Tools`，然后按指示一步步完成安装。
+启动后，双击虚拟机内桌面上的 `VMWare Tools`，在弹出框中再双击 `安装 VMWare Tools`，然后按指示一步步完成安装。
 
 ![20-install-vmware-tools.png](./vmware-macos/20-install-vmware-tools.PNG)
 
-安装完成后关闭虚拟机，在重新设置虚拟的的 `CD/DVD -> 连接` 选项，这回设成 `使用物理驱动器`
+安装完成后关闭虚拟机，再重新设置虚拟的的 `CD/DVD -> 连接` 选项，这回设成 `使用物理驱动器`
 
 ![21-select-physical-driver.png](./vmware-macos/21-select-physical-driver.PNG)
 
