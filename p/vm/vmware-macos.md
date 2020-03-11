@@ -54,6 +54,11 @@ sha256sum: be9b9692e43ddb695dab37c36d7b0f006df8c6358c682fa4ee2c6325fbc18b29
 * 如果是 linux 系统，则执行 `sudo ./lnx-install.sh`。
 
 
+#### 1.3.3 下载 darwin.iso 工具
+
+* google 硬盘[下载地址](https://drive.google.com/file/d/1YDUadCvInZJu1LVB6aAvZgcMo8jpGdpZ/view?usp=sharing)
+* 百度网盘[下载地址](https://pan.baidu.com/s/15qWqEsm1o6LhtrO_mOFxiA)(提取码: 4ugi)
+
 ---
 
 
@@ -114,6 +119,8 @@ smc.version = 0
 
 ![08-installing.png](./vmware-macos/08-installing.PNG)
 
+*有时候会在这里遇到一个问题：即需要BIOS设置打开虚拟化开关*
+
 #### 2.2.7 安装系统
 
 首先需要选择系统语言再进入`下一步`
@@ -131,6 +138,14 @@ smc.version = 0
 然后选择`安装 macOS`再`继续`
 
 ![12-select-install.png](./vmware-macos/12-select-install.PNG)
+
+*如果在这一步遇到错误提示应用程序副本已损坏,不能用来安装macOS，则需要关掉网络后重新打开虚拟机，然后这一步先不要安装 macOS，而是先在左上角打开终端执行以下命令*
+
+```sh
+date 112212342015.56
+```
+
+上面这段执行将日期设置成 `2015年11月22日12点34分56秒`，实际上只需要设置成 2016年之前的一个就好了
 
 接下来选择安装位置，就选择刚才抹掉的磁盘，选好之后点击`安装`
 
